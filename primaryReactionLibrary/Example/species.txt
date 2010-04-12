@@ -4,46 +4,13 @@
 // Note: every species except C in Leeds mechanism are included in our small molecule oxidation library
 // some quesion remained: is C3H2 singlet or triplet?  I made it triplet, need to be clarified.
 
+CH3CH2
+1 C 1 {2,S}
+2 C 0 {1,S}
 
-HXD13
+C2H4
 1 C 0 {2,D}
-2 C 0 {1,D} {3,S}
-3 C 0 {2,S} {4,D}
-4 C 0 {3,D} {5,S}
-5 C 0 {4,S} {6,S}
-6 C 0 {5,S}
-
-C6H9
-1 C 0 {2,D}
-2 C 0 {1,D} {3,S}
-3 C 0 {2,S} {4,D}
-4 C 0 {3,D} {5,S}
-5 C 0 {4,S} {6,S}
-6 C 1 {5,S}
+2 C 0 {1,D}
 
 H
 1 H 1
-
-C5H7
-1 C 0 {2,D}
-2 C 0 {1,D} {3,S}
-3 C 0 {2,S} {4,D}
-4 C 0 {3,D} {5,S}
-5 C 1 {4,S}
-
-CH3
-1 C 1
-
-O2
-1 O 0 {2,D}
-2 O 0 {1,D}
-
-C2H5
-1 C 0 {2,S}
-2 C 1 {1,S}
-
-C4H5
-1 C 0 {2,D}
-2 C 0 {1,D} {3,S}
-3 C 0 {2,S} {4,D}
-4 C 1 {3,D}

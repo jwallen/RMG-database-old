@@ -12,7 +12,7 @@
 // R!H means any atom, except H
 
 R
-1 *  R 0			
+Union {cis, 2-ene_cis, 2-butene_cis, t-butyl_cis_2-ene, higher-ene_cis, t-butyl_cis_t-butyl, t-butyl_cis, double_cis, ortho, ketene, ketene_1C-C_1C-H, ketene_2C-H, ketene_2C-C, biketene}			
 
 cis
 1  * C 0 {2,Dcis} {3,S} {4,S}

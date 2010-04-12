@@ -6,8 +6,16 @@
 
 Unit:
 A: mol/cm3/s
-E: kJ/mol
+E: kcal/mol
 
 Reactions: 
-// part with CO
-HXD13 = CH3 + C5H7	1.0e15	0	0	0	0	0
+
+// Ontbinding DMDS
+
+//CH3 + CH2S = CH3CH2S	2.4874005925712835E15	-0.8999999999999999	0.25	0	0	0
+//CH2CH2SH = CH3CH2S	85.5	3.04	11.62	0	0	0
+//CH2CH2 + SH = CH2CH2SH 9960.0	2.7	-0.8	0	0	0
+
+//Ontbinding DES
+
+C2H4 + H = CH3CH2	4.61E8	1.64	1.0	0	0	0

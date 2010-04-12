@@ -73,6 +73,24 @@ R3H_SS
 3 *2 {R!H} 0 {2,S}, {4,S}
 4 *3 H 0 {3,S}
 
+R3H_SS_C
+1 *1 R 1 {2,S}
+2 *4 Cs 0 {1,S}, {3,S}
+3 *2 R 0 {2,S}, {4,S}
+4 *3 H 0 {3,S}
+
+R3H_SS_O
+1 *1 R 1 {2,S}
+2 *4 Os 0 {1,S}, {3,S}
+3 *2 R 0 {2,S}, {4,S}
+4 *3 H 0 {3,S}
+
+R3H_SS_S
+1 *1 R 1 {2,S}
+2 *4 Ss 0 {1,S}, {3,S}
+3 *2 R 0 {2,S}, {4,S}
+4 *3 H 0 {3,S}
+
 R3H_SS_12cy3
 1 *1 {R!H} 1 {2,S}, {5,{S,D,B}}
 2 *4 {R!H} 0 {1,S}, {3,S}, {5,{S,D,B}}
@@ -188,12 +206,6 @@ R3H_BB
 1 *1 Cb 1 {2,B}
 2 *4 Cbf 0 {1,B}, {3,B}
 3 *2 Cb 0 {2,B}, {4,S}
-4 *3 H 0 {3,S}
-
-R3H_SS_OC
-1 *1 Os 1 {2,S}
-2 *4 Os 0 {1,S}, {3,S}
-3 *2 Cs 0 {2,S}, {4,S}
 4 *3 H 0 {3,S}
 
 R4H
@@ -1231,7 +1243,7 @@ Y_rad_out
 1 *1 {R!H} 1 
 
 C_rad_out_single
-1 *1 C 1 {2,S}, {3,S} 
+1 *1 Cs 1 {2,S}, {3,S} 
 2 R 0 {1,S}
 3 R 0 {1,S}
 
@@ -1255,6 +1267,11 @@ C_rad_out_H/NonDeO
 2 H 0 {1,S}
 3 O 0 {1,S}
 
+C_rad_out_H/NonDeS
+1 *1 C 1 {2,S}, {3,S}
+2 H 0 {1,S}
+3 S 0 {1,S}
+
 C_rad_out_H/OneDe
 1 *1 C 1 {2,S}, {3,S}
 2 H 0 {1,S}
@@ -1267,8 +1284,8 @@ C_rad_out_noH
 
 C_rad_out_NonDe
 1 *1 C 1 {2,S}, {3,S}
-2 {Cs,O} 0 {1,S}
-3 {Cs,O} 0 {1,S}
+2 {Cs,O,S} 0 {1,S}
+3 {Cs,O,S} 0 {1,S}
 
 C_rad_out_Cs2
 1 *1 C 1 {2,S}, {3,S}
@@ -1296,12 +1313,12 @@ C_rad_out_Cs2_cy5
 C_rad_out_NDMustO
 1 *1 C 1 {2,S}, {3,S}
 2 O 0 {1,S}
-3 {Cs,O} 0 {1,S}
+3 {Cs,O,S} 0 {1,S}
 
 C_rad_out_OneDe
 1 *1 C 1 {2,S}, {3,S}
 2 {Cd,Ct,Cb,CO} 0 {1,S}
-3 {Cs,O} 0 {1,S}
+3 {Cs,O,S} 0 {1,S}
 
 C_rad_out_OneDe/Cs
 1 *1 C 1 {2,S}, {3,S}
@@ -1312,6 +1329,11 @@ C_rad_out_OneDe/O
 1 *1 C 1 {2,S}, {3,S}
 2 {Cd,Ct,Cb,CO} 0 {1,S}
 3 O 0 {1,S}
+
+C_rad_out_OneDe/S
+1 *1 C 1 {2,S}, {3,S}
+2 {Cd,Ct,Cb,CO} 0 {1,S}
+3 S 0 {1,S}
 
 C_rad_out_TwoDe
 1 *1 C 1 {2,S}, {3,S}
@@ -1332,7 +1354,7 @@ Cd_rad_out_singleH
 
 Cd_rad_out_singleNd
 1 *1 Cd 1 {2,S}
-2 {Cs,O} 0 {1,S}
+2 {Cs,O,S} 0 {1,S}
 
 Cd_rad_out_singleDe
 1 *1 Cd 1 {2,S}
@@ -1350,8 +1372,15 @@ Cb_rad_out
 2 *4 {Cb,Cbf} 0 {1,B}
 
 CO_rad_out
-1 *1 C 1 {2,D}
-2 O 0 {1,D}
+1 *1 Cd 1 {2,D}
+2 Od 0 {1,D}
+
+C=S_rad_out
+1 *1 Cd 1 {2,D}
+2 Sd 0 {1,D}
+
+S_rad_out
+1 *1 S 1
 
 XH_out
 1 *2 {R!H} 0 {2,S}
@@ -1570,4 +1599,6 @@ Cb_H_out
 1 *2 Cb 0 {2,S}
 2 *3 H 0 {1,S}
 
-
+S_H_out
+1 *2 S 0 {2,S}
+2 *3 H 0 {1,S}
